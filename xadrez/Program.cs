@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using tabuleiro;
+using xadrez.jogo;
 
 namespace xadrez {
     class Program {
         static void Main(string[] args) {
+            PartidaDeXadrez partida = new PartidaDeXadrez();
+            Tela.imprimirTabuleiro(partida.tab);
+
+            Console.ReadLine();
         }
     }
 }
