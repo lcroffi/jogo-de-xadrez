@@ -34,7 +34,10 @@ namespace xadrez {
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
-                }                
+                }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
+                Console.ReadLine();
             }
             catch (TabuleiroException e) {
                 Console.WriteLine(e.Message);

@@ -1,12 +1,12 @@
 ﻿using tabuleiro;
 
 namespace xadrez.jogo {
-    class King : Peca {
-        public King(Tabuleiro tab, Cor cor) : base(tab, cor) {
+    class Rei : Peca {
+        public Rei(Tabuleiro tab, Cor cor) : base(tab, cor) {
         }
 
         public override string ToString() {
-            return "K";
+            return "R";
         }
 
         private bool podeMover(Posicao pos) {
