@@ -2,6 +2,7 @@
 
 namespace xadrez.jogo {
     class PosicaoXadrez {
+
         public char coluna { get; set; }
         public int linha { get; set; }
 
@@ -11,7 +12,7 @@ namespace xadrez.jogo {
         }
 
         public Posicao toPosicao() {
-            return new Posicao(8 - linha, coluna - 'a'); //se coluna for 'a' vira 0, se for 'b' vira 1, etc
+            return new Posicao(8 - linha, coluna - 'a');
         }
 
         public override string ToString() {
